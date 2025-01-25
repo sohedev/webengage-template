@@ -2,10 +2,14 @@ import Image from 'next/image';
 
 import ExtensionDetails from '@/app/(delete-this-and-modify-page.tsx)/ExtensionDetails';
 import SetupDetails from '@/app/(delete-this-and-modify-page.tsx)/SetupDetails';
+import WebEngageButton from "@/components/webEngageButton";
 
 const HomePage: React.FC = () => {
     return (
         <main className='mx-auto mt-6 flex max-w-7xl flex-col justify-center gap-6 px-3 font-[family-name:var(--font-geist-sans)] sm:mt-3 sm:gap-12 sm:px-0'>
+            <div className='w-full flex justify-center'>
+                <WebEngageButton />
+            </div>
             <div className='justify-centersm:items-start row-start-2 flex flex-col items-center gap-8'>
                 <div className='flex items-center gap-4'>
                     <Image

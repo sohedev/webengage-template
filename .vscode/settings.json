@@ -31,4 +31,10 @@
     ],
     "eslint.format.enable": true,
     "npm.packageManager": "npm",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
 }

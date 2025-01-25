@@ -7,6 +7,7 @@ import { ThemeProvider } from 'next-themes';
 
 import NavigationBar from '@/app/(delete-this-and-modify-page.tsx)/NavigationBar';
 import '@/app/globals.css';
+import WebEngageScript from '@/components/WebEngageScript';
 
 const geistSans = localFont({
     src: './fonts/GeistVF.woff',
@@ -32,6 +33,7 @@ const Layout = ({ children }: Readonly<{ children: ReactNode }>) => {
             <body className={`${geistSans.variable} ${geistMono.variable} bg-background text-foreground antialiased`}>
                 <ThemeProvider attribute='class'>
                     <NavigationBar />
+                    <WebEngageScript />
                     {children}
                 </ThemeProvider>
             </body>
